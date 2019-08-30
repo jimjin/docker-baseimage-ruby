@@ -178,4 +178,4 @@ ADD ./files/vendor /app/vendor
 RUN bundle install
 
 EXPOSE 22 80 3000
-CMD ["/usr/bin/supervisord"]
+CMD ["sh", "-c", "env >> /etc/environment ; /usr/bin/supervisord"]
