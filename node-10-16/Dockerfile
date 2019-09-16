@@ -4,7 +4,7 @@ RUN mkdir /app
 WORKDIR /app/
 
 COPY package.json ./
-RUN npm install --silent --no-cache --registry=https://registry.npm.taobao.org
+# RUN npm install --silent --no-cache --registry=https://registry.npm.taobao.org
 
 VOLUME /app
 
